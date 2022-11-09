@@ -13,24 +13,26 @@
 <script src="game_login.js"></script>
 </head>
 <body>
-	<center> 
-		<h1>Quiz de Matemática</h1> 
+	<center>
+			<h1 id="ol">++-Quiz de Matemática-++</h1> 
+		<h2 id="oi">Responda as perguntas e vire um verdadeiro Matemático!</h2>
+		<span>
 		<div class="col-lg-4 col-sm-8 col-xs-11 login_div1"> 
 			<h3 >Jogador 1, faça login para jogar</h3> 
 			<label >Nome de usuário:</label> 
-			<input type="text" id="player1NameInput" class="form-control" placeholder="Nome do Aluno 1"> 
+			<input type="text" id="player1NameInput" class="form-control" placeholder="Nome do Jogador 1"> 
 			<br> 
 		</div> 
 		<br> 
 		<div class="col-lg-4 col-sm-8 col-xs-11 login_div2"> 
 			<h3 >Jogador 2, faça login para jogar</h3> 
 			<label >Nome de usuário:</label> 
-			<input type="text" id="player2NameInput" class="form-control" placeholder="Nome do Aluno 2"> 
+			<input type="text" id="player2NameInput" class="form-control" placeholder="Nome do Jogador 2"> 
 			<br> 
 		</div> 
+		</span>
 		<br> 
 		<button style="width:30%" class="btn btn-primary" onclick="addUser()">Log in</button> 
 	</center>
-
 </body>
 </html>
