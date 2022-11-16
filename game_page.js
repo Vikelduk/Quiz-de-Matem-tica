@@ -30,3 +30,51 @@ function send()
     document.getElementById("number1parte1").value = "";
     document.getElementById("number2parte1").value = "";
 }
+
+
+questionTurn = "jogador1Nome";
+answerTurn = "jogador2Nome";
+
+
+function check()
+{
+	getAnswer = document.getElementById("input_check_box").value;
+	if(getAnswer == actual_answer)	
+	{
+		if(answerTurn == "jogador1Nome")
+		{
+			jogador1Score = jogador1Score + 1;
+		    document.getElementById("joga1Score").innerHTML = jogador1Score;
+		}
+		else 
+		{
+			jogador2Score = jogador2Score + 1;
+		    document.getElementById("joga2Score").innerHTML = jogador2Score;
+		}
+	}
+	if(questionTurn == "jogador1Nome")
+	{
+		questionTurn = "jogador2Nome"
+		document.getElementById("jogadorPergunta").innerHTML = "Turno de Pergunta - " + jogador2Nome ;
+	}
+	else 
+	{
+		questionTurn = "jogador1Nome"
+		document.getElementById("jogadorPergunta").innerHTML = "Turno de Pergunta - " + jogador1Nome ;
+	}
+
+	if(answerTurn == "jogador1Nome")
+	{
+		answerTurn = "jogador2Nome"
+		document.getElementById("jogadorResposta").innerHTML = "Turno de Resposta - " + jogador2Nome;
+	}
+	else 
+	{
+		answerTurn = "jogador1Nome"
+		document.getElementById("jogadorResposta").innerHTML = "Turno de Resposta - " + jogador1Nome ;
+	}
+
+    document.getElementById("output").innerHTML = "";
+}
+
+
