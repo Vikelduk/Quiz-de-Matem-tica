@@ -4,8 +4,8 @@ jogador2Nome = localStorage.getItem("nomeJogador2");
 jogador1Score = 0;
 jogador2Score = 0;
 
-document.getElementById("nomeJogador1").innerHTML = jogador1Nome + " : ";
-document.getElementById("nomeJogador2").innerHTML = jogador2Nome + " : ";
+document.getElementById("nomeJogadoro1").innerHTML = jogador1Nome + " : ";
+document.getElementById("nomeJogadoro2").innerHTML = jogador2Nome + " : ";
 
 document.getElementById("joga1Score").innerHTML = jogador1Score ;
 document.getElementById("joga2Score").innerHTML = jogador2Score ;
