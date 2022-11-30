@@ -46,7 +46,7 @@ function check()
 			jogador1Score = jogador1Score + 1;
 		    document.getElementById("joga1Score").innerHTML = jogador1Score;
 		}
-		else 
+		if(answerTurn == "jogador2Nome")
 		{
 			jogador2Score = jogador2Score + 1;
 		    document.getElementById("joga2Score").innerHTML = jogador2Score;
@@ -57,7 +57,7 @@ function check()
 		questionTurn = "jogador2Nome"
 		document.getElementById("jogadorPergunta").innerHTML = "Turno de Pergunta - " + jogador2Nome ;
 	}
-	else 
+	if(questionTurn == "jogador2Nome")
 	{
 		questionTurn = "jogador1Nome"
 		document.getElementById("jogadorPergunta").innerHTML = "Turno de Pergunta - " + jogador1Nome ;
@@ -68,7 +68,7 @@ function check()
 		answerTurn = "jogador2Nome"
 		document.getElementById("jogadorResposta").innerHTML = "Turno de Resposta - " + jogador2Nome;
 	}
-	else 
+	if(answerTurn == "jogador2Nome")
 	{
 		answerTurn = "jogador1Nome"
 		document.getElementById("jogadorResposta").innerHTML = "Turno de Resposta - " + jogador1Nome ;
